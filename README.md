@@ -9,6 +9,6 @@ Students are expected to:
 Student Info
 =========================
 
-* Student Name: USTH ICT1
-* Student ID: Not-Vietnamese
+* Student Name: Nguyễn Ngọc Lân
+* Student ID: Ba12-104
 * Student Group ID: Not-for-now
