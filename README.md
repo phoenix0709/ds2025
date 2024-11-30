@@ -11,4 +11,4 @@ Student Info
 
 * Student Name: Nguyễn Ngọc Lân
 * Student ID: Ba12-104
-* Student Group ID: Not-for-now
+* Student Group ID: 11
