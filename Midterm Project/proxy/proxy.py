@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-FTP_SERVER = "<FTP_SERVER_IP>"
+FTP_SERVER = "100.105.98.42"
 FTP_USER = "ftpuser"
 FTP_PASS = "ftppass"
 
@@ -26,4 +26,4 @@ def upload_file():
         return f"Failed to upload file: {e}"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=6969)

@@ -7,7 +7,7 @@
    pip install mpi4py requests
 - Run the Client:
    bash:
-   mpiexec -n 2 python client_mpi.py
+   python3 client.py
 
 --------------------------------------------------------------------------
 
@@ -41,8 +41,7 @@ Usage
 
 ### Sending Files
 1. On the Client machine, enter:
-   upload /path/to/your/file.txt
-
+   upload file.txt
 2. Check the file on the Server:
    ftp <FTP_SERVER_IP>
    ls

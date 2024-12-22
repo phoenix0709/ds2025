@@ -9,7 +9,7 @@ size = comm.Get_size()
 def send_file(file_path):
     try:
         with open(file_path, "rb") as f:
-            response = requests.post("http://<PROXY_IP>:5000/upload", files={"file": f})
+            response = requests.post("http://100.68.97.89:6969/upload", files={"file": f})
         print(f"Server response from rank {rank}: {response.text}")
     except Exception as e:
         print(f"Error from rank {rank}: {e}")
