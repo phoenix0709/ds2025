@@ -1,0 +1,50 @@
+1.Client
+- Move `client/` to the Client machine.
+- Install dependencies:
+   bash:
+   sudo apt update
+   sudo apt install -y mpich
+   pip install mpi4py requests
+- Run the Client:
+   bash:
+   mpiexec -n 2 python client_mpi.py
+
+--------------------------------------------------------------------------
+
+2.MPI Proxy
+-Move `proxy/` to the Proxy Server.
+-Install dependencies:
+   bash:
+   sudo apt update
+   sudo apt install -y python3-pip
+   pip install flask   
+-Start the Proxy server:
+   bash:
+   python proxy.py
+
+------------------------------------------------------------------
+
+3.FTP Server
+-Move `ftp/` to the FTP Server.
+-Install dependencies:
+   bash:
+   sudo apt update
+   sudo apt install -y vsftpd   
+-Configure and start the FTP server:
+   bash:
+   cp vsftpd.conf /etc/vsftpd.conf
+   bash setup_ftp.sh
+   sudo systemctl restart vsftpd
+
+--------------------------------------------------------------------------------     
+Usage
+
+### Sending Files
+1. On the Client machine, enter:
+   upload /path/to/your/file.txt
+
+2. Check the file on the Server:
+   ftp <FTP_SERVER_IP>
+   ls
+
+
