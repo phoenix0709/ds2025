@@ -26,4 +26,4 @@ def upload_file():
         return f"Failed to upload file: {e}"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=6969)
+    app.run(host='100.68.97.89', port=6969)
